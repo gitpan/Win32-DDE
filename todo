@@ -1,0 +1,22 @@
+Get under RCS control.
+
+Look at the Win32::DDE::Client AUTOLOAD to make some variables readonly, also
+fix for bad $self (to handle Win32::DDE::BadCall correctly).
+
+look harder at where the dde initialize gets done; Gurusamy Sarathy suggested
+putting it into the DllMain like Win32::OLE does; need to figure out how to
+handle errors then...
+
+Fix the makefile to not delete server.exe when a make clean gets done.
+
+develop a better server to test against. Something that will reject bad
+commands would be real nice.
+
+look at doing server .pm code (probably will need to work on
+Win32::DDE::Callback). Using Tie::Watch looks promising.
+
+look at advise code; develop an example of 'hot' and 'warm' DDE. Again,
+Win32::DDE::Callback probably needs work.
+
+Doug Wegscheid wegscd@whirlpool.com
+Oct 9, 1997 09:55 EDT

@@ -1,0 +1,11 @@
+Revision history for Perl extension Win32::DDE.
+
+0.01  Thu Aug  28 17:22:58 1997
+	- original version; created by h2xs 1.18
+	- imported the 16-bit code
+	- removed 16-bit calls; now builds
+
+0.2   Oct 8, 1997
+	- finish up test scripts
+	- minor changes to .xs
+	- cleanup Client.pm

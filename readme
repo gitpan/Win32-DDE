@@ -1,0 +1,29 @@
+This package is currently the Win32::DDE::Client class, and the supporting
+Win32::DDE and Win32::DDE::Callback classes. Only 'cold' DDE is currently
+written and tested; I think there is enough .xs code to support 'warm' and
+'hot' DDE, as well as a DDE server.
+
+I am only currently providing binary for Perl 5.004; the provided binaries 
+will NOT work with ActiveState's Perl, and I don't know if the code is 
+source compatible.
+
+If you want to help with warm/hot DDE, Win32::DDE::Server, or an ActiveState
+port, let me know so we don't duplicate effort.
+
+This code was originally lying around on www.hip.com in an unsupported
+directory; Doug Breshears was the original author, and I can't seem to find any
+email address for him; Gurusamy Sarathy <gsar@umich.edu> converted the .xs code
+from a 16 bit version to a 32 bit version, and I provided the updated .pm
+files, POD, test script, Makefile.PL, code 'cleanup' (mostly insertion of
+underscores) and the other junk.
+
+To test, run one copy of server.exe, then run the test.pl script; it should run
+all tests correctly, and the server.exe should put a dialog box up when the
+Execute command in test.pl runs.  If you run multiple copies, some tests will
+fail.
+
+
+enjoi
+
+Doug Wegscheid
+wegscd@whirlpool.com
